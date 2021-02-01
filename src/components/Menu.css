@@ -1,0 +1,35 @@
+
+.menu__create {
+    margin: 0 auto 60px;
+    padding: 5px 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+    display: flex;
+}
+
+.menu__item {
+    margin: 20px 10px;
+    padding: 5px 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+    display: flex;
+    transition: all 2s;
+}
+
+menu__item:hover {
+    padding-right: 30px
+}
+
+.category {
+    color: white;
+    background-color: red;
+    padding: 3px 10px;
+    margin: 10px auto;
+}
+
+.delete__item {
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+}
