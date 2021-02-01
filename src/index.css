@@ -3,3 +3,11 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --bg: #fdff90;
+  --accent:red;
+  --text-color: black;
+  --border: 1px solid red;
+  --speed: 500ms;
+}

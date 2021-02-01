@@ -1,23 +1,72 @@
-
 .menu__create {
+    width: 80%;
     margin: 0 auto 60px;
     padding: 5px 10px;
     border: 1px solid red;
-    border-radius: 10px;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
     display: flex;
+    flex-direction: column;
+    transition: transform 1s;
+}
+
+.collasped {
+    transform: translateY(-460px);
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #ad0909;
+    color: white;
+    padding: 14px 20px;
+    margin: 40px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn__expand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    margin: 0 auto;
+    top: 460px;
+    left: 48.5%;
+    z-index: 99;
+    text-align: center;
 }
 
 .menu__item {
+    width: 50ch;
     margin: 20px 10px;
     padding: 5px 10px;
     border: 1px solid red;
     border-radius: 10px;
     display: flex;
-    transition: all 2s;
+    flex-direction: column;
 }
 
-menu__item:hover {
-    padding-right: 30px
+.menu__item h3,
+.menu__item p {
+    border: 1px solid black;
 }
 
 .category {
@@ -28,8 +77,14 @@ menu__item:hover {
 }
 
 .delete__item {
-    padding: 3px;
+    /* width: 30px;
+    height: 30px; */
+    /* padding: 3px; */
+    display: inline;
     border: 1px solid black;
-    border-radius: 10px;
-    display: flex;
+    border-radius: 5px;
+    font-size: 24px;
+    /* position: relative;
+    top: 100;
+    right: 10; */
 }
