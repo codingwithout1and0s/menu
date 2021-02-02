@@ -9,13 +9,13 @@ export default function Menu() {
     const options = [
         {
             id: 1,
-            label: "SPECIAL",
+            label: "*SPECIAL",
             value: "special",
         },
         {
             id: 2,
-            label: "Appretizer",
-            value: "appretizer",
+            label: "Appetizer",
+            value: "appetizer",
         },
         {
             id: 3,
@@ -39,32 +39,39 @@ export default function Menu() {
         },
     ];
 
+    const MenuList = require("../data/Menu.json");
+
+    const deleteItem = (id) => {
+        console.log(id);
+        // delete MenuList.menu[index];
+    }
+
     return (
         <div className="menu">
             <div className={open ? 'menu__create' : 'menu__create collasped'}>
-            <form>
-                <h3>Add Menu Item</h3>
-                <label>
-                    Menu Item:
-                    <input type="text" name="name" />
-                </label>
-                <label>
-                    Price:
-                    <input type="text" name="name" />
-                </label>
+                <form className={open ? '' : 'collasped'}>
+                    <h3>Add Menu Item</h3>
+                    <label>
+                        Menu Item:
+                        <input type="text" name="name" />
+                    </label>
+                    <label>
+                        Price:
+                        <input type="text" name="name" />
+                    </label>
 
-                <label>
-                    Description:
-                    <input type="text" name="name" />
-                </label>
+                    <label>
+                        Description:
+                        <input type="text" name="name" />
+                    </label>
 
-                <select>
-                    {options.map((option) => (
-                        <option value={option.value} key={option.id}>{option.label}</option>
-                    ))}
-                </select>
+                    <select>
+                        {options.map((option) => (
+                            <option value={option.value} key={option.id}>{option.label}</option>
+                        ))}
+                    </select>
 
-                <input type="submit" value="Enter" />
+                    <input type="submit" value="Enter" />
                 </form>
                 <button className="btn__expand" onClick={() => setOpen(!open)}>^</button>
             </div>
@@ -74,14 +81,21 @@ export default function Menu() {
                     <h1>Entrees</h1>
                     <p>All entrees come with a selection of a side or salad.</p>
                 </div>
-                <div className="menu__item">
-                    <div className="delete__item">
-                        <p>X</p>
+
+                {MenuList.menu.map(item => (
+                    <div className="menu__item" key={item.id}>
+                        <div id="remove__div" onClick={deleteItem(item.id)}>
+                            <div className="X">
+                                <div className="XX"></div>
+                            </div>
+                        </div>
+                        <h3>
+                            <span>{item.title}</span>
+                            <span>${item.price}</span>
+                        </h3>
+                        <p>{item.desc}</p>
                     </div>
-                    <h3>Cheese Ravioli</h3>
-                    <h3>$25.99</h3>
-                    <p>A gourmet bowl of handmade ravioli made with a blend of smooth gouda, voluminous freshly made mozzarella, and a sharp aged cheddar in a velvet rose sauce. Entry comes with 2 pieces of garlic toast.</p>
-                </div>
+                ))}
             </div>
         </div>
     )

@@ -1,0 +1,19 @@
+{
+    "category": ["special", "appetizer", "entree", "plant-based", "sides", "beverages"],
+    "menu": [
+        {
+            "id": 1,
+            "title": "Triple Cheese Ravioli",
+            "category": "entree",
+            "desc": "A gourmet bowl of handmade ravioli made with a blend of smooth gouda, voluminous freshly made mozzarella, and a sharp aged cheddar in a velvet rose sauce.",
+            "price": "24.99"
+        },
+        {
+            "id": 2,
+            "title": "Lobster Mac 'n' Cheese",
+            "category": "entree",
+            "desc": "This Indulgent Lobster Mac and Cheese features a creamy decadent sauce made with four cheeses and tender chunks of lobster baked together with pasta to gooey perfection.",
+            "price": "38.99"
+        }
+    ]
+}
