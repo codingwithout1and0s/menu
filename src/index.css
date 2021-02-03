@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&family=Roboto:wght@300&display=swap");
+
 :root {
-  --bg: #fdff90;
-  --accent:red;
-  --text-color: black;
-  --border: 1px solid red;
+  --primary-color: #854d27;
+  --secondary-color: #dd7230;
+  --thirdary-color: #f4c95d;
+  --quandary-color: #e7e393;
+  --quintary-color: #04030f;
   --speed: 500ms;
+  --large-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  font-family: "Roboto", sans-serif;
 }
 
 * {
@@ -14,4 +19,42 @@
 
 body {
   background-color: var(--bg);
+}
+
+input:focus {
+  --ring-opacity: 1;
+  --ring-color: rgba(99, 102, 241, var(--ring-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --border-opacity: 1;
+  border-color: rgba(99, 102, 241, var(--border-opacity));
+}
+
+[type="text"]:focus,
+[type="textarea"]:focus,
+[type="email"]:focus,
+[type="url"]:focus,
+[type="password"]:focus,
+[type="number"]:focus,
+[type="date"]:focus,
+[type="month"]:focus,
+[type="search"]:focus,
+[type="tel"]:focus,
+[type="time"]:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --ring-inset: var(--get-empty, /*!*/ /*!*/);
+  --ring-offset-width: 0px;
+  --ring-offset-color: #fff;
+  --ring-color: var(--primary-color);
+  --ring-offset-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width)
+    var(--ring-offset-color);
+  --ring-shadow: var(--ring-inset) 0 0 0 calc(1px + var(--ring-offset-width))
+    var(--ring-color);
+  box-shadow: var(--ring-offset-shadow), var(--ring-shadow),
+    var(--shadow, 0 0 #0000);
+  border-color: #2563eb;
 }

@@ -1,5 +1,44 @@
 {
-    "category": ["special", "appetizer", "entree", "plant-based", "sides", "beverages"],
+    "category": [
+        "special",
+        "appetizer",
+        "entree",
+        "plant-based",
+        "sides",
+        "beverages"
+    ],
+    "options": [
+        {
+            "id": 1,
+            "label": "*SPECIAL",
+            "value": "special"
+        },
+        {
+            "id": 2,
+            "label": "Appetizer",
+            "value": "appetizer"
+        },
+        {
+            "id": 3,
+            "label": "Entree",
+            "value": "entree"
+        },
+        {
+            "id": 4,
+            "label": "Plant-Based",
+            "value": "plant-based"
+        },
+        {
+            "id": 5,
+            "label": "Beverages",
+            "value": "beverages"
+        },
+        {
+            "id": 6,
+            "label": "Dessert",
+            "value": "dessert"
+        }
+    ],
     "menu": [
         {
             "id": 1,
@@ -14,6 +53,69 @@
             "category": "entree",
             "desc": "This Indulgent Lobster Mac and Cheese features a creamy decadent sauce made with four cheeses and tender chunks of lobster baked together with pasta to gooey perfection.",
             "price": "38.99"
+        },
+        {
+            "id": 3,
+            "title": "Rigatoni Salsiccia",
+            "category": "entree",
+            "desc": "italian sausage, tomato sauce, red wine, cherry tomatoes",
+            "price": "21.00"
+        },
+        {
+            "id": 4,
+            "title": "Casarecce Boscaiola",
+            "category": "entree",
+            "desc": "mushrooms, pancetta, premium beef, pork and veal, peas, rosé sauce, white truffle oil",
+            "price": "22.00"
+        },
+        {
+            "id": 5,
+            "title": "Chicken Linguini",
+            "category": "entree",
+            "desc": "sautéed chicken, sun-dried tomato, cream, cherry tomatoes, herbs",
+            "price": "22.00"
+        },
+        {
+            "id": 6,
+            "title": "Spaghetti Carbonara",
+            "category": "entree",
+            "desc": "pancetta, garlic, parmesan cream sauce",
+            "price": "19.99"
+        },
+        {
+            "id": 7,
+            "title": "Margherita Pizza",
+            "category": "entree",
+            "desc": "bocconcini, parmigiano reggiano, tomato sauce, basil",
+            "price": "16.00"
+        },
+        {
+            "id": 8,
+            "title": "Lamb Shank",
+            "category": "entree",
+            "desc": "braised lamb shank, rapini, risotto bianco",
+            "price": "29.00"
+        },
+        {
+            "id": 9,
+            "title": "Beef Tenderloin",
+            "category": "entree",
+            "desc": "grilled 7oz premium AAA beef, seasonal vegetables, gratin potatoes, red wine au jus",
+            "price": "24.99"
+        },
+        {
+            "id": 10,
+            "title": "Veal Parmesan",
+            "category": "entree",
+            "desc": "parmesan breaded veal cutlet, mozzarella, capers, herb butter, spaghetti pomodoro",
+            "price": "38.99"
+        },
+        {
+            "id": 1,
+            "title": "Seared Salmon",
+            "category": "entree",
+            "desc": "salmon, beurre blanc, seasonal vegetables, ﬁngerling potatoes",
+            "price": "27.00"
         }
     ]
 }
